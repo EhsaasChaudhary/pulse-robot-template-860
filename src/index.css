@@ -102,7 +102,7 @@
   }
 
   body {
-    @apply bg-white text-black font-sans antialiased;
+    @apply bg-background text-foreground font-sans antialiased;
   }
 
   /* Smooth scrolling */
@@ -171,7 +171,7 @@
   }
   
   .nav-link {
-    @apply relative text-gray-800 hover:text-pulse-500 py-2 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-pulse-500 after:transition-all hover:after:w-full;
+    @apply relative text-gray-800 dark:text-gray-200 hover:text-pulse-500 dark:hover:text-pulse-400 py-2 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-pulse-500 after:transition-all hover:after:w-full;
   }
 }
 
