@@ -1,4 +1,3 @@
-
 import React from "react";
 const MadeByHumans = () => {
   return <section id="made-by-humans" className="w-full bg-white py-0">
@@ -29,7 +28,7 @@ const MadeByHumans = () => {
             </div>
             
             {/* White box at the bottom with overflow */}
-            <div className="w-[120%] bg-white h-10 rounded-t-lg absolute left-[-10%] bottom-0"></div>
+            <div className="w-[120%] h-10 rounded-t-lg absolute left-[-10%] bottom-0 bg-transparent"></div>
           </div>
         </div>
       </div>
