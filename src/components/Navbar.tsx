@@ -62,7 +62,7 @@ const Navbar = () => {
         </a>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex space-x-8">
+        <nav className="hidden md:flex space-x-6">
           <a 
             href="#" 
             className="nav-link"
@@ -73,8 +73,11 @@ const Navbar = () => {
           >
             Home
           </a>
-          <a href="#features" className="nav-link">About</a>
-          <a href="#details" className="nav-link">Contact</a>
+          <a href="#about" className="nav-link">About Us</a>
+          <a href="#ai-technology" className="nav-link">AI Technology</a>
+          <a href="#projects" className="nav-link">Projects</a>
+          <a href="#team" className="nav-link">Team</a>
+          <a href="#contact" className="nav-link">Contact</a>
         </nav>
 
         {/* Mobile menu button - increased touch target */}
@@ -92,10 +95,10 @@ const Navbar = () => {
         "fixed inset-0 z-40 bg-white flex flex-col pt-16 px-6 md:hidden transition-all duration-300 ease-in-out",
         isMenuOpen ? "opacity-100 translate-x-0" : "opacity-0 translate-x-full pointer-events-none"
       )}>
-        <nav className="flex flex-col space-y-8 items-center mt-8">
+        <nav className="flex flex-col space-y-4 items-center mt-8">
           <a 
             href="#" 
-            className="text-xl font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-gray-100" 
+            className="text-lg font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-gray-100" 
             onClick={(e) => {
               e.preventDefault();
               scrollToTop();
@@ -106,18 +109,48 @@ const Navbar = () => {
             Home
           </a>
           <a 
-            href="#features" 
-            className="text-xl font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-gray-100" 
+            href="#about" 
+            className="text-lg font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-gray-100" 
             onClick={() => {
               setIsMenuOpen(false);
               document.body.style.overflow = '';
             }}
           >
-            About
+            About Us
           </a>
           <a 
-            href="#details" 
-            className="text-xl font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-gray-100" 
+            href="#ai-technology" 
+            className="text-lg font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-gray-100" 
+            onClick={() => {
+              setIsMenuOpen(false);
+              document.body.style.overflow = '';
+            }}
+          >
+            AI Technology
+          </a>
+          <a 
+            href="#projects" 
+            className="text-lg font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-gray-100" 
+            onClick={() => {
+              setIsMenuOpen(false);
+              document.body.style.overflow = '';
+            }}
+          >
+            Projects
+          </a>
+          <a 
+            href="#team" 
+            className="text-lg font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-gray-100" 
+            onClick={() => {
+              setIsMenuOpen(false);
+              document.body.style.overflow = '';
+            }}
+          >
+            Team
+          </a>
+          <a 
+            href="#contact" 
+            className="text-lg font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-gray-100" 
             onClick={() => {
               setIsMenuOpen(false);
               document.body.style.overflow = '';
